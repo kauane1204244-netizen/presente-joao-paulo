@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#24152e">
+<title>Para o meu velhinho ❤️</title>
+<style>
+:root{--bg:#17111f;--panel:#281c32;--pink:#ff8eae;--cream:#fff2e8;--muted:#d9bfd0;--gold:#ffd58a}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 15% 5%,#512843 0,transparent 32%),radial-gradient(circle at 90% 80%,#39264c 0,transparent 35%),var(--bg);color:var(--cream);font-family:Georgia,'Times New Roman',serif;min-height:100vh}
+main{width:min(760px,92%);margin:auto;padding:34px 0 60px}
+.hero{text-align:center;padding:54px 18px 34px}
+.eyebrow{font:700 11px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:var(--gold)}
+h1{font-size:clamp(38px,9vw,68px);line-height:1.02;margin:18px 0;color:#fff0f2}
+h1 span{color:var(--pink)}
+.subtitle{font-size:18px;line-height:1.6;color:var(--muted);max-width:530px;margin:0 auto}
+.heart{font-size:28px;display:inline-block;animation:pulse 1.5s infinite}
+@keyframes pulse{50%{transform:scale(1.18)}}
+.card{background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.035));border:1px solid rgba(255,194,213,.22);border-radius:24px;padding:25px;margin:16px 0;box-shadow:0 16px 45px #09060d55}
+h2{font-size:25px;color:var(--pink);margin:0 0 13px}
+p{font-size:17px;line-height:1.75;margin:10px 0}
+.small{font:12px Arial,sans-serif;color:var(--muted);letter-spacing:1px;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}
+.tile{background:#ffffff0b;border:1px solid #ffffff18;border-radius:17px;padding:16px}
+.tile b{display:block;color:var(--gold);font-size:17px;margin-bottom:6px}
+.tile span{font-size:14px;line-height:1.5;color:var(--muted)}
+button{border:0;border-radius:999px;padding:14px 20px;background:linear-gradient(100deg,#ff8eae,#ffc0a8);color:#311927;font-weight:800;font-size:15px;cursor:pointer;box-shadow:0 8px 22px #ff8eae30}
+button:active{transform:scale(.98)}
+.center{text-align:center}
+.hidden{display:none}
+.reveal{margin-top:16px;padding:18px;border-radius:16px;background:#120d18;border:1px dashed #ff9ab7}
+footer{text-align:center;color:#bda7b8;font:12px Arial,sans-serif;padding:28px 8px}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.card{padding:21px}.hero{padding-top:35px}}
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <div class="eyebrow">13 de novembro · nosso dia</div>
+    <div class="heart">♥</div>
+    <h1>Para você,<br><span>João Paulo</span></h1>
+    <p class="subtitle">Um presentinho feito com amor, algumas risadas e um pouquinho de saudade — porque comemorar a gente nunca é demais.</p>
+  </section>
+
+  <section class="card">
+    <div class="small">Capítulo especial</div>
+    <h2>1 ano e 1 mês de nós dois ❤️</h2>
+    <p>Meu velhinho, meu amor, meu amoreco… chegamos a mais um mês da nossa história! E eu ainda acho engraçado como alguém pode ser, ao mesmo tempo, meu lugar de carinho e o famoso <b>domador de dinossauro</b>. 😂🦖</p>
+    <p>Não existe presente que consiga resumir tudo o que você significa pra mim. Então fiz esse cantinho: simples, nosso e cheio de amor.</p>
+  </section>
+
+  <section class="card">
+    <h2>Coisas que eu amo na nossa história</h2>
+    <div class="grid">
+      <div class="tile"><b>🥰 O seu jeitinho</b><span>Até nas pequenas coisas, você consegue deixar marca no meu dia.</span></div>
+      <div class="tile"><b>😂 Nossas bobeiras</b><span>As brincadeiras e os apelidos que só fazem sentido no nosso mundinho.</span></div>
+      <div class="tile"><b>💗 O carinho</b><span>Os momentos em que um gesto simples já diz tanta coisa.</span></div>
+      <div class="tile"><b>🦖 O domador</b><span>Um título importantíssimo, concedido por motivos que a ciência ainda investiga.</span></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Uma cartinha pra você 💌</h2>
+    <p>Meu amor, obrigada por fazer parte da minha vida e por dividir comigo mais um pedacinho dessa caminhada. Eu sei que nenhum relacionamento é feito só de dias perfeitos, mas quero continuar aprendendo, conversando, rindo e construindo lembranças ao seu lado.</p>
+    <p>Quero que você nunca duvide de que é especial pra mim. Você tem um espaço enorme no meu coração, meu velhinho. Que venham muitos outros meses, novas histórias, mais risadas e muitos motivos pra comemorar.</p>
+    <p><b>Feliz 1 ano e 1 mês, meu amoreco. Eu amo você! ❤️</b></p>
+  </section>
+
+  <section class="card center">
+    <div class="small">Tem uma última coisinha...</div>
+    <h2>Abra sua surpresa 🎁</h2>
+    <p>Prometo que não tem dinossauro de verdade. Acho. 👀</p>
+    <button id="revealBtn" type="button">Abrir surpresa ❤️</button>
+    <div id="surprise" class="reveal hidden">
+      <div style="font-size:34px">💖🦖💖</div>
+      <p><b>Você foi oficialmente promovido!</b></p>
+      <p>Cargo: meu velhinho favorito, amoreco oficial e domador de dinossauro em tempo integral.</p>
+      <p>Benefícios: carinho, parceria, beijinhos e mais capítulos da nossa história. A vaga é sua — sem período de experiência. 😂</p>
+      <p><b>Eu escolheria viver essa história com você de novo. Feliz nosso dia!</b></p>
+    </div>
+  </section>
+  <footer>Feito com amor, especialmente para João Paulo · 1 ano e 1 mês ❤️</footer>
+</main>
+<script>
+document.getElementById('revealBtn').addEventListener('click',function(){
+  const box=document.getElementById('surprise');
+  box.classList.toggle('hidden');
+  this.textContent=box.classList.contains('hidden')?'Abrir surpresa ❤️':'Fechar surpresa 💗';
+});
+</script>
+</body>
+</html>
